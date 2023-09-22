@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: grayscale;
+}
+
+body {
+    background-color: silver;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.grid-container {
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 0.4rem;
+    margin: 10px auto;
+    padding: 7px;
+    max-width: 1000px;
+}
+
+.item {
+    min-height: 80px;
+}
+
+.Stitle {
+    background: darkkhaki;
+    grid-column: 1 / span 3;
+}
+
+.nav {
+    background: lightpink;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column: 1 / span 6;
+    grid-row: 2 / span 6;
+    grid-gap: 0.4rem;
+}
+
+.Ptitle {
+    background: lightskyblue;
+    grid-column: 1 / span 4;
+    grid-row: 1;
+}
+
+.sidebar {
+    background: darkgoldenrod;
+    grid-column: 5;
+    grid-row: 1 / span 2;
+}
+
+.meta {
+    background: lightgreen;
+    grid-column: 1;
+    grid-row: 2 / span 5;
+}
+
+.content {
+    background: silver;
+    grid-column: 2 / span 3;
+    grid-row: 2 / span 2;
+}
+
+.ads {
+    background: green;
+    grid-column: 5;
+    grid-row: 3 / span 2;
+}
+
+.image {
+    background: yellow;
+    grid-column: 2 / span 3;
+    grid-row: 4 / span 3;
+}
+
+.stuff {
+    background: purple;
+    grid-column: 5;
+    grid-row: 5 / span 2;
+}
+
+.footer {
+    background: dimgray;
+    grid-column: 1 / span 6;
+}
