@@ -1,0 +1,65 @@
+/* Change the contrast of an image with the filter property, grayscale -> e.g. filter: grayscale(50%) */
+
+:root {
+    --primary-color: darkslategray;
+    --secondary-color: lightblue;
+    --neutral-color: silver;
+    --dark-color: #333;
+    --light-color: #fff;
+    --font: 'Onest', sans-serif;
+    --gradient: linear-gradient(
+        to top right,
+        #5e2ad3,
+        #acacac,
+        #307abd,
+        #2aba5d,
+        #fa9e7b
+    );
+}
+
+body {
+    background: var(--gradient);
+    font-family: var(--font);
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: var(--neutral-color);
+    height: 250px;
+    width: 180px;
+    border: none;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px var(--dark-color);
+    transition: all 1.5s;
+}
+
+.card:hover {
+    transform: rotate(50deg);
+}
+
+.circle {
+    background: var(--secondary-color);
+    height: 200px;
+    width: 200px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px var(--dark-color);
+    margin-top: 20px;
+    transition: 1s;
+}
+
+.circle:hover {
+    transform: rotateX(50deg);
+}
