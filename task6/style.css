@@ -1,3 +1,5 @@
+/* Change the contrast of an image with the filter property, grayscale -> e.g. filter: grayscale(50%) */
+
 :root {
     --primary-color: teal;
     --secondary-color: steelblue;
@@ -21,9 +23,43 @@ body {
 
 .item {
     background: var(--primary-color);
+    color: var(--light-color);
     min-height: 150px;
     font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
+    border-radius: 5px;
+    text-shadow: 1px 1px 1px var(--light-color), 3px 3px 5px var(--dark-color);
+    filter: grayscale(0.5);
+    transition: all 1s ease-in-out;
+}
+
+.item:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 3px var(--dark-color);
+}
+
+.second {
+    height: 100px;
+    width: 100px;
+    background: var(--secondary-color);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    color: var(--light-color);
+    box-shadow: 0 3px 5px var(--dark-color), inset 0 0 5px var(--dark-color);
+    transition: all 1s;
+}
+
+.second:hover {
+    cursor: pointer;
+    height: 200px;
+    width: 200px;
+    font-size: 1.8rem;
+    transition: all 1s;
 }
