@@ -1,0 +1,29 @@
+:root {
+    --primary-color: teal;
+    --secondary-color: steelblue;
+    --neutral-color: cornsilk;
+    --dark-color: #333;
+    --light-color: #fff;
+    --font: 'Onest', sans-serif;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--neutral-color);
+    color: var(--dark-color);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.item {
+    background: var(--primary-color);
+    min-height: 150px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
