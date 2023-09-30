@@ -67,7 +67,7 @@ body {
 
 .menu-item h1::after {
     content: "";
-    height: 3px;
+    height: 4px;
     width: 0;
     display: inherit;
     background: var(--primary-color);
@@ -75,7 +75,7 @@ body {
 }
 
 .menu-item:hover h1::after {
-    width: 100%;
+    width: 80%;
 }
 
 @keyframes move {
