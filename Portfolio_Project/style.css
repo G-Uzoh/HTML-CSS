@@ -29,6 +29,7 @@ body {
 
 body {
     padding: 0 20px;
+    line-height: 1.5;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -87,11 +88,35 @@ h1 {
 
 /* Main content styles */
 
-img {
-    height: 200px;
-    width: auto;
-    margin: 20px;
-    /* border-radius: 50%; */
+h2 {
+    margin: 10px 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.5px solid var(--light-gray);
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.img-holder {
+    background-image: url(photos/mac1.jpg);
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    margin: 20px auto;
+    border: 0.5px solid var(--light-gray);
+    border-radius: 50%;
 }
 
 .projects h3 {
@@ -105,14 +130,21 @@ img {
     font-style: italic;
 }
 
-.img-holder {
-    background-image: url(photos/mac1.jpg);
-    background-size: cover;
-    height: 170px;
-    width: 170px;
-    margin: 20px auto;
-    border: 0.5px solid var(--light-gray);
-    border-radius: 50%;
+.projects a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.project-btn {
+    font-family: inherit;
+    font-size: inherit;
+    margin: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+    background: white;
+    color: var(--caramel);
 }
 
 .experience-wrap, .skills-wrap {
@@ -120,8 +152,6 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50px auto;
-    line-height: 1.5;
     text-align: center;
 }
 
@@ -251,6 +281,11 @@ footer p {
         justify-content: center;
         align-items: center;
         width: 250px;
+    }
+
+    .img-holder {
+        height: 170px;
+        width: 170px;
     }
 
     .experience, .skills {
