@@ -105,6 +105,16 @@ img {
     font-style: italic;
 }
 
+.img-holder {
+    background-image: url(photos/mac1.jpg);
+    background-size: cover;
+    height: 170px;
+    width: 170px;
+    margin: 20px auto;
+    border: 0.5px solid var(--light-gray);
+    border-radius: 50%;
+}
+
 .experience-wrap, .skills-wrap {
     display: flex;
     flex-direction: column;
@@ -220,17 +230,27 @@ footer p {
         padding: 0;
     }
 
+    h2 {
+        margin: 20px;
+        text-align: center;
+    }
+
     .projects-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
     }
     
     .projects {
         border: 1px solid var(--light-gray);
-        margin: 0 auto;
+        border-radius: 7px;
+        margin: 10px auto;
         padding: 5px;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
     }
 
     .experience, .skills {
