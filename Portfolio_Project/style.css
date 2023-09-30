@@ -24,6 +24,7 @@
 html,
 body {
     background-color: var(--dark-blue);
+    scroll-behavior: smooth;
 }
 
 body {
@@ -158,7 +159,7 @@ input {
     text-align: center;
 }
 
-button {
+.send-btn {
     margin: 7px 0;
     padding: 10px;
     background-color: var(--caramel);
@@ -172,6 +173,19 @@ button {
 button:hover {
     cursor: pointer;
     opacity: 0.9;
+}
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 0.5rem;
+    font-size: 2.5rem;
+    border: none;
+    background: transparent;
+}
+
+.to-top-icon {
+    color: var(--caramel);
 }
 
 .media {
@@ -223,5 +237,9 @@ footer p {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .back-to-top {
+        right: 1.5rem;
     }
 }
