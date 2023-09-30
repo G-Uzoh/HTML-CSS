@@ -34,7 +34,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(--light-gray);
+    color: white;
 }
 
 /* Header styles */
@@ -45,6 +45,18 @@ header {
     width: 100vw;
     background-image: url('./photos/mountain.jpg');
     background-size: cover;
+}
+
+.top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 1.3rem;
+    color: var(--caramel);
 }
 
 .menu {
@@ -81,7 +93,7 @@ header {
 
 h1 {
     text-align: center;
-    margin: 400px auto;
+    margin: 250px auto;
     padding: 0 8px;
     font-family: 'Handlee', cursive;
 }
@@ -104,7 +116,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 0.5px solid var(--light-gray);
+    border-bottom: 0.5px solid white;
     padding: 10px;
     margin-bottom: 5px;
 }
@@ -244,6 +256,10 @@ footer p {
 /* Responsive styles */
 
 @media (min-width: 768px) {
+    .logo {
+        font-size: 2rem;
+    }
+
     .menu-items li a {
         font-size: 1rem;
     }
@@ -258,6 +274,7 @@ footer p {
 
     h1 {
         padding: 0;
+        margin: 450px auto;
     }
 
     h2 {
@@ -272,14 +289,10 @@ footer p {
     }
     
     .projects {
-        border: 1px solid var(--light-gray);
+        border: 0.5px solid white;
         border-radius: 7px;
         margin: 10px auto;
         padding: 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 250px;
     }
 
