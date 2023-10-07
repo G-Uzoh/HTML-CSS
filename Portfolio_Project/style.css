@@ -155,13 +155,12 @@ main {
     margin-bottom: 10px;
 }
 
-.projects a {
+a {
     color: var(--torquoise);
     text-decoration: none;
-    font-style: italic;
 }
 
-.projects a:hover {
+a:hover {
     cursor: pointer;
     text-decoration: underline;
 }
@@ -334,13 +333,14 @@ button:hover {
     .about-me img {
         width: 11.25rem;
         height: 11.25rem;
-        margin: auto 20px;
+        margin: auto 50px auto 0;
         border-radius: 50%;
     }
 
     .about-me p,
     .skills p {
         width: 600px;
+        text-align: justify;
     }
 
     footer {
