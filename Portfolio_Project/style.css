@@ -206,6 +206,93 @@ a:hover {
     color: var(--caramel);
 }
 
+.skills-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+}
+
+.img {
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+}
+
+#css {
+    background-image: url(css-logo.png);
+}
+
+#js {
+    background-image: url(JavaScript-logo.png);
+}
+
+#react {
+    background-image: url(React-icon.svg.png);
+    width: 120px;
+    height: 100px;
+}
+
+#python {
+    background-image: url(python-logo.png);
+}
+
+#jira {
+    background-image: url(jira.jpeg);
+    background-position: center;
+}
+
+.container {
+    width: 60%;
+    background-color: #ddd;
+    margin: 20px auto;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: var(--torquoise);
+  }
+
+.css {
+    width: 80%;
+    border-radius: 4px 0 0 4px;
+}
+
+.js {
+    width: 70%;
+    border-radius: 4px 0 0 4px;
+}
+
+.react {
+    width: 45%;
+    border-radius: 4px 0 0 4px;
+}
+
+.python {
+    width: 25%;
+    border-radius: 4px 0 0 4px;
+}
+
+.jira {
+    width: 65%;
+    border-radius: 4px 0 0 4px;
+}
+
 /* Footer styles */
 
 footer {
@@ -218,6 +305,10 @@ footer {
     padding: 10px;
     font-size: 0.875rem;
     color: #333;
+}
+
+.contact-me {
+    font-size: 1.2rem;
 }
 
 form {
@@ -362,91 +453,8 @@ button:hover {
     }
 
     .card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        /* background-color: white; */
         width: 200px;
         height: 200px;
-    }
-
-    .img {
-        height: 100px;
-        width: 100px;
-        background-size: cover;
-    }
-
-    #html {
-        background-image: url(html-logo.png);
-    }
-
-    #css {
-        background-image: url(css-logo.png);
-    }
-
-    #js {
-        background-image: url(JavaScript-logo.png);
-    }
-
-    #react {
-        background-image: url(React-icon.svg.png);
-        width: 120px;
-        height: 100px;
-    }
-
-    #python {
-        background-image: url(python-logo.png);
-    }
-
-    #jira {
-        background-image: url(jira.jpeg);
-        background-position: center;
-    }
-
-    .container {
-        width: 60%;
-        background-color: #ddd;
-        margin: 20px auto;
-        border: none;
-        border-radius: 4px;
-      }
-      
-      .skills {
-        text-align: right;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        color: white;
-        background-color: var(--torquoise);
-      }
-
-    .html {
-        /* width: 90%; background-color: #04AA6D; */
-    }
-
-    .css {
-        width: 80%;
-        border-radius: 4px 0 0 4px;
-    }
-
-    .js {
-        width: 70%;
-        border-radius: 4px 0 0 4px;
-    }
-
-    .react {
-        width: 45%;
-        border-radius: 4px 0 0 4px;
-    }
-    
-    .python {
-        width: 25%;
-        border-radius: 4px 0 0 4px;
-    }
-    
-    .jira {
-        width: 65%;
-        border-radius: 4px 0 0 4px;
     }
 
     footer {
