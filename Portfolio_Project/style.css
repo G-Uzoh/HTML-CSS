@@ -49,6 +49,10 @@ header {
     background-size: cover;
 }
 
+.header {
+    width: 100vw;
+}
+
 .top-menu {
     display: flex;
     align-items: center;
@@ -58,9 +62,10 @@ header {
     top: 0;
 }
 
-.logo {
+.logo a {
     font-size: 1.3rem;
     color: var(--caramel);
+    text-decoration: none;
 }
 
 .menu {
@@ -382,8 +387,9 @@ button:hover {
 /* Responsive styles */
 
 @media (min-width: 768px) {
-    .logo {
+    .logo a {
         font-size: 2rem;
+        text-decoration: none;
     }
 
     .menu-items li {
@@ -426,8 +432,7 @@ button:hover {
         margin: auto 50px auto 0;
     }
 
-    .about-me p,
-    .skills p {
+    .about-me p {
         width: 600px;
         text-align: justify;
     }
@@ -472,5 +477,21 @@ button:hover {
 
     .back-to-top {
         right: 1.5rem;
+    }
+
+    /* Gallery styles */
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .grid-item {
+        object-fit: cover;
+    }
+
+    .grid-item img {
+        width: 150px;
+        height: 150px;
     }
 }
