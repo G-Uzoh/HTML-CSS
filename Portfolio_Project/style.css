@@ -60,12 +60,13 @@ header {
     padding: 10px;
     position: sticky;
     top: 0;
+    left: 0;
+    background-color: white;
 }
 
-.logo a {
-    font-size: 1.3rem;
-    color: var(--caramel);
-    text-decoration: none;
+.logo img {
+    height: 50px;
+    width: 50px;
 }
 
 .menu {
@@ -119,10 +120,13 @@ header {
     color: var(--torquoise);
 }
 
-h1 {
+.cover-text {
     text-align: center;
     margin: 250px auto;
     padding: 0 8px;
+}
+
+.cover-text h4 {
     font-family: 'Handlee', cursive;
 }
 
@@ -409,9 +413,9 @@ button:hover {
         display: none;
     }
 
-    h1 {
+    .cover-text {
         padding: 0;
-        margin: 450px auto;
+        margin: 400px auto;
     }
 
     h2 {
