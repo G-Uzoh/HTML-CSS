@@ -184,9 +184,9 @@ main {
     margin-bottom: 2rem;
 }
 
-.projects .img-holder {
+#pizza-app {
     background-image: url(photos/mac1.jpg);
-    margin: 20px auto;
+    background-position: center;
 }
 
 #decision-app {
