@@ -155,6 +155,7 @@ main {
     width: 150px;
     border: 0.5px solid var(--light-gray);
     border-radius: 50%;
+    margin: 20px auto;
 }
 
 .about-wrap, .skills-wrap {
@@ -170,7 +171,6 @@ main {
 }
 
 .about-me .img-holder {
-    margin: 20px auto;
     background-image: url(photos/george.jpg);
 }
 
