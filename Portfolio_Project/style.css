@@ -61,7 +61,7 @@ header {
     position: sticky;
     top: 0;
     left: 0;
-    background-color: white;
+    /* background-color: white; */
 }
 
 .logo img {
@@ -508,5 +508,10 @@ button:hover {
     .grid-item img {
         width: 150px;
         height: 150px;
+    }
+
+    .snowman img {
+        width: 150px;
+        height: auto;
     }
 }
