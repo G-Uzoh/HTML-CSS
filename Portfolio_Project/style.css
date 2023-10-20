@@ -395,6 +395,86 @@ button:hover {
     color: #333;
 }
 
+/* Gallery styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2px;
+    background-color: white;
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+.chessboard {
+    grid-column: 1 / span 2;
+    background-image: url(photos/chess.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.george {
+    grid-column: 3 / span 2;
+    background-image: url(photos/george.jpg);
+    background-size: cover;
+}
+
+.snowman {
+    grid-column: 5 / span 2;
+    grid-row: 1 / span 2;
+    background-image: url(photos/snowman.jpg);
+    background-size: cover;
+}
+
+.sunset {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    background-image: url(photos/sunset.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.square {
+    grid-column: 3 / span 2;
+    grid-row: 2;
+    background-image: url(photos/square.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.road {
+    grid-column: 5 / span 2;
+    background-image: url(photos/road.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.mountain {
+    grid-column: 1 / span 4;
+    grid-row: 3;
+    background-image: url(photos/mountain.jpg);
+    background-size: cover;
+}
+
+.road-and-sunset {
+    grid-column: 1 / span 3;
+    background-image: url(photos/road-and-sunset.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.laptop {
+    grid-column: 4 / span 3;
+    background-image: url(photos/laptop.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-item img {
+    width: 100px;
+    height: 100px;
+}
+
 /* Responsive styles */
 
 @media (min-width: 768px) {
@@ -490,24 +570,8 @@ button:hover {
         right: 1.5rem;
     }
 
-    /* Gallery styles */
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-    }
-
-    .grid-item {
-        object-fit: cover;
-    }
-
     .grid-item img {
         width: 150px;
         height: 150px;
-    }
-
-    .snowman img {
-        width: 150px;
-        height: auto;
     }
 }
