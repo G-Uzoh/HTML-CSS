@@ -59,7 +59,7 @@ header {
     padding: 10px;
 }
 
-/* .top-menu.sticky {
+.top-menu.sticky {
     position: fixed;
     top: 0;
     display: flex;
@@ -68,7 +68,7 @@ header {
     padding: 7px;
     background: white;
     width: 100vw;
-} */
+}
 
 .logo img {
     height: 50px;

@@ -13,7 +13,7 @@ const seeMoreSpeed = document.querySelector('.more-speed');
 
 // Add scroll event to window
 window.onscroll = function() {
-    // window.scrollY >= navMenu.offsetTop ? topMenu.classList.add('sticky') : topMenu.classList.remove('sticky');
+    window.scrollY >= navMenu.offsetTop ? topMenu.classList.add('sticky') : topMenu.classList.remove('sticky');
 
     scrollFn();
 }
