@@ -33,9 +33,7 @@
           </button>
           <ul class="menu-items">
             <li>
-              <a href="#about-me"
-                ><i class="fa-solid fa-circle-user"></i> About</a
-              >
+              <a href="#about-me">About</a>
             </li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -78,7 +76,11 @@
           <div class="img-holder" id="pizza-app"></div>
           <h3>Pizza app</h3>
           <p>HTML, CSS, JavaScript</p>
-          <small><a href="#">See more</a></small>
+          <p class="description-pizza">
+            A pizza ordering app where a customer can select their pizza size of
+            choice including toppings, with the price updated in real time.
+          </p>
+          <a class="more-pizza"><span>Show description</span></a>
           <a href="https://public.bc.fi/s2301211/pizza/" target="_blank"
             ><button class="project-btn">View project</button></a
           >
@@ -87,7 +89,10 @@
           <div class="img-holder" id="decision-app"></div>
           <h3>Decision demon</h3>
           <p>HTML, CSS, JavaScript</p>
-          <small><a href="#">See more</a></small>
+          <p class="description-decision">
+            Decision demon - a fun app that helps a user with decision making.
+          </p>
+          <a class="more-decision"><span>Show description</span></a>
           <a
             href="https://public.bc.fi/s2301211/Decision_Making_App/"
             target="_blank"
@@ -98,7 +103,11 @@
           <div class="img-holder" id="piano-game"></div>
           <h3>Speed game</h3>
           <p>HTML, CSS, JavaScript</p>
-          <small><a href="#">See more</a></small>
+          <p class="description-speed">
+            This is a game where a player plays a series of randomly generated
+            musical notes.
+          </p>
+          <a class="more-speed"><span>Show description</span></a>
           <a href="https://public.bc.fi/s2301211/speedgame/" target="_blank"
             ><button class="project-btn">View project</button></a
           >
@@ -157,7 +166,7 @@
           <label for="message">Message:</label>
           <textarea name="message" id="message" cols="30" rows="5"> </textarea>
           <div class="button-container">
-            <button class="send-btn">Send</button>
+            <button class="send-btn" disabled>Send</button>
           </div>
         </form>
       </div>

@@ -42,7 +42,6 @@ body {
 /* Header styles */
 
 header {
-    /* position: relative; */
     height: 100vh;
     width: 100vw;
     background-image: url('./photos/mountain.jpg');
@@ -59,6 +58,17 @@ header {
     justify-content: space-between;
     padding: 10px;
 }
+
+/* .top-menu.sticky {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px;
+    background: white;
+    width: 100vw;
+} */
 
 .logo img {
     height: 50px;
@@ -124,6 +134,7 @@ header {
 
 .cover-text h4 {
     font-family: 'Handlee', cursive;
+    font-size: 1.15rem;
 }
 
 /* Main content styles */
@@ -142,7 +153,7 @@ main {
 #about-me,
 #projects,
 #skills {
-    /* scroll-margin-top: 40px; */
+    scroll-margin-top: 70px;
 }
 
 .img-holder {
@@ -200,9 +211,31 @@ main {
     margin-bottom: 10px;
 }
 
+.description-pizza,
+.description-decision,
+.description-speed {
+    display: none;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 0.875rem;
+}
+
+.description-pizza.show {
+    display: block;
+}
+
+.description-decision.show {
+    display: block;
+}
+
+.description-speed.show {
+    display: block;
+}
+
 a {
     color: var(--torquoise);
     text-decoration: none;
+    font-size: 0.875rem;
 }
 
 a:hover {
@@ -213,7 +246,7 @@ a:hover {
 .project-btn {
     font-family: inherit;
     font-size: inherit;
-    margin: 10px;
+    margin: 20px auto;
     padding: 8px 10px;
     border: none;
     border-radius: 5px;
@@ -568,6 +601,11 @@ button:hover {
 
     .back-to-top {
         right: 1.5rem;
+    }
+
+    .grid-container {
+        gap: 5px;
+        background-color: transparent;
     }
 
     .grid-item img {
