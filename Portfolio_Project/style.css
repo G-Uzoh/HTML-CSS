@@ -548,6 +548,10 @@ button:hover {
         width: 11.25rem;
     }
 
+    #projects {
+        scroll-margin-top: 85px;
+    }
+
     .about-me {
         flex-direction: row;
     }
@@ -573,6 +577,10 @@ button:hover {
         margin: 10px auto;
         padding: 5px;
         width: 250px;
+    }
+
+    .projects:hover {
+        transform: scale(1.01);
     }
 
     .skills-card {
